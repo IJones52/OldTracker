@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Dashboard - Fitness Tracker</title>
+  
+  
+  <link rel="stylesheet" href="skeleton.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+    <!--The header. Eventually add a sign-in button-->
+    <header>
+        <h1 class="title">Fitness Tracker</h1>
+    </header>
+    <br>
+    <!--The main. Two Placeholders for progress photos. Then exercises and workouts-->
+    <main>
+      <div class="containter">
+
+
+        <!--Where the progress/ ananlytics go-->
+        <div class="progress">
+          <div class="row">
+            <div class="one-half column">
+              <div class="pic_placeholder">Images go here</div>
+              <button class="button-primary">Add a Progress Picture</button>
+            </div>
+            <div class="one-half column">
+              <div class="graph_placeholder">Weight graph goes here</div>
+              <button class="button-primary">Document Your Weight</button>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <!--Where your exercises go-->
+        <div class="exercises">
+          <h4>Exercises</h4>
+          <p>Save individual exercises or workouts here:</p>
+          <button class="button-primary">Add a Exercise</button>
+          <table class="u-full-width">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Focus</th>
+                <th>Calories Burned</th>
+                <th>Link</th>
+                
+              </tr>
+            </thead>
+          </table>
+          <br>
+          <!--Where your Workouts go-->
+          <div class="workouts">
+            <h4>Workout Routines</h4>
+            <P>Save combinations of exercises and workouts as workout routines. Track calories burned per workrout</P>
+            <button class="button-primary">Add a Workout Routine</button>
+            <table class="u-full-width">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Theoritical Calories Burned</th>
+                <th>Average Calories Burned</th>
+                <th>Link</th>
+                
+              </tr>
+            </thead>
+            <br>
+          </div>
+        </div>
+
+      </div>
+     
+    </main>    
+</body>
+</html>
