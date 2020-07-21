@@ -3,28 +3,29 @@
 <head>
 <title>Add an Exercise</title>
   
-    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style.css">
+    
+    
 
 </head>
 <body>
+    
     <!--The header. Eventually add a sign-in button-->
     <header>
         <h1 class="title">Fitness Tracker</h1>
     </header>
     <br>
-
-    <body>
-        <div class="form">
+        <form class="exerciseForm" action="index.html">
             <div class="row">
                 <div class="six columns">
-                    <label for="exercsiseName">Exercise Name</label>
-                    <input class="u-full-width" type="email" placeholder="Shred..." id="exerciseName">
+                    <label for="exerciseName">Exercise Name</label>
+                    <input class="u-full-width" type="text" placeholder="Shred..." id="exerciseName" name="exerciseName">
                 </div>
                 <div class="six columns">
                     <label for="exerciseFocus">Exercise Focus</label>
-                    <select class="u-full-width" id="exerciseFocus">
+                    <select class="u-full-width" id="exerciseFocus" name="exerciseFocus">
                         <option value="Abs">Abs</option>
                         <option value="Back">Back</option>
                         <option value="Biceps">Biceps</option>
@@ -39,15 +40,16 @@
             <div class="row">
                 <div class="six columns">
                     <label for="exercsieCalories">Calories Burned</label>
-                    <input class="u-full-width" type="email" placeholder="400..." id="exercsieCalories">
+                    <input class="u-full-width" type="text" placeholder="400..." id="exercsieCalories" name="exercsieCalories">
                 </div>
                 <div class="six columns">
                     <label for="exercsieLink">Youtube Link</label>
-                    <input class="u-full-width" type="email" placeholder="youtube.com/..." id="exercsieLink">
+                    <input class="u-full-width" type="text" placeholder="youtube.com/..." id="exercsieLink" name="exerciseLink">
                 </div>
             </div>
-            <a href="index.html"><input class="button-primary" type="submit" value="Submit"></a>       
-        </div>
-    </body>
+            <input type="submit" value="Submit"/>     
+        </form>
+        
 </body>
+<script src="js/client.js"></script>
 </html>
